@@ -1,0 +1,17 @@
+/* navbar.css */
+@keyframes nombre-de-la-animacion {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .navbar-brand {
+    animation: nombre-de-la-animacion 2s infinite;
+  }
+  
