@@ -1,9 +1,12 @@
-// Importa las funciones que necesitas de los SDK que necesitas
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore"
 import { getStorage } from 'firebase/storage';
 
-// Configuración de tu aplicación web de Firebase
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCgvxNFUdg8OQXmjSnfEARfsnO0iPQNH74",
   authDomain: "db-proykim.firebaseapp.com",
@@ -14,7 +17,7 @@ const firebaseConfig = {
   appId: "1:364070619730:web:3ed46d3f6da28285302d8b"
 };
 
-// Inicializa Firebase
+// Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore();
 const storage = getStorage(firebaseApp, "gs://db-proykim.appspot.com");
